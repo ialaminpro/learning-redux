@@ -6,9 +6,9 @@ class Preview extends Component <any, any> {
     render() {
         return (
             <React.Fragment>
-                {this.props.name} <br/>
-                {this.props.age}<br/>
-                {this.props.address}
+                {this.props.FormState.name} <br/>
+                {this.props.FormState.age}<br/>
+                {this.props.FormState.address}
             </React.Fragment>
         )
     } 

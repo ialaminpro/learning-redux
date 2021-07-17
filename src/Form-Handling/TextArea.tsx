@@ -6,7 +6,7 @@ import { mapStateToProps as mapStateToPropsTextArea} from '../redux/mappings/sta
 
 interface IProps {
     FormState : IUser,
-    setStateForm: any
+    setStateForm : any
 }
 
 class TextArea extends Component <IProps, any> {

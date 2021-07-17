@@ -1,0 +1,5 @@
+export const actionTypes = {
+    HANDLE_CHANGE_ADDRESS: "HANDLE_CHANGE_ADDRESS",
+    HANDLE_CHANGE_NAME: "HANDLE_CHANGE_NAME"
+};
+

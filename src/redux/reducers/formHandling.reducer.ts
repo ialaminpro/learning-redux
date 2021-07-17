@@ -1,9 +1,10 @@
+import { IUser } from "../../Interfaces/Models/users";
 import { actionTypes } from "../actions/formHandling.action";
 
-const initialState  = {
+const initialState: IUser  = {
     name: 'Al Amin',
     address: 'Test',
-    age: '13',
+    age: 13,
 };
 
 export function formHandling(state = initialState, action:any){

@@ -3,20 +3,16 @@ import { actionTypes } from "../actions/formHandling.action";
 const initialState  = {
     name: 'Al Amin',
     address: 'Test',
+    age: '13',
 };
 
 export function formHandling(state = initialState, action:any){
     
     switch(action.type){
-        case actionTypes.HANDLE_CHANGE_ADDRESS: 
+        case actionTypes.SET_STATE_FORM: 
         return {
             ...state,
-            address:action.payload
-        }
-        case actionTypes.HANDLE_CHANGE_NAME: 
-        return {
-            ...state,
-            name:action.payload
+            [action.key]:action.payload
         }
         default:
             return state;
